@@ -1,0 +1,11 @@
+sysAd1: n
+sysAd2: n
+sysAd3: n
+
+web1: n
+web2: n 
+web3: n
+
+app1: n
+app2: n
+app3: n
