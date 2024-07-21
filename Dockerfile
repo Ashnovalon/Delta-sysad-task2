@@ -13,11 +13,10 @@ WORKDIR /serversetup
 
 COPY gemini.conf /etc/apache2/sites-available/gemini.conf
 COPY . .
-COPY alias ./alias
 
 RUN a2dissite 000-default.conf
 RUN a2ensite gemini.conf
-RUN chmod +x ./aias/*.sh
+RUN chmod +x ./alias/*.sh
 
 CMD ["bash", "-c", "./alias/UserGen.sh && setfacl -m u:www-data:r /home/core/mentee_domain.txt && sudo apachectl -D FOREGROUND"]
 
