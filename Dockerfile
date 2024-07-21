@@ -19,5 +19,5 @@ RUN a2dissite 000-default.conf
 RUN a2ensite gemini.conf
 RUN chmod +x ./aias/*.sh
 
-CMD ["bash", "-c", "./alias/serGen.sh && setfacl -m u:www-data:r /home/core/mentee_domain.txt && sudo apachectl -D FOREGROUND"]
+CMD ["bash", "-c", "./alias/UserGen.sh && setfacl -m u:www-data:r /home/core/mentee_domain.txt && sudo apachectl -D FOREGROUND"]
 
