@@ -34,7 +34,7 @@ def create_table(connection):
     except Error as e:
         print(f"The error '{e}' occurred")
 
-def insert_data(connection, name, age):
+def insert_data(connection, name, web, app, sysad):
     insert_query = f"INSERT INTO `menteestask` (`id`, `name`, `web`, `app`, `sysad`) VALUES (NULL, '{name}', '{web}', '{app}', '{sysad}'); "
     cursor = connection.cursor()
     try:
