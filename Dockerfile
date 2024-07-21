@@ -13,7 +13,7 @@ WORKDIR /serversetup
 
 COPY gemini.conf /etc/apache2/sites-available/gemini.conf
 COPY . .
-COPY *.sh ./alias
+COPY alias ./alias
 
 RUN a2dissite 000-default.conf
 RUN a2ensite gemini.conf
