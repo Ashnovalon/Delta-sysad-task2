@@ -7,4 +7,4 @@
 
 4.newuser.sql must be run in the mysql container cli to add read only user in phpmyadmin.
 
-5.index.php is still under development.
+5.php folder is still under development.
